@@ -253,10 +253,9 @@ If you use Cerberus, please cite:
 
 ```bibtex
 @article{korabel_cerberus,
-  author  = {Korabel, Nickolay and Waigh, Thomas A.},
-  title   = {Uncertainty-aware parameter estimation for heterogeneous anomalous
-             single-particle trajectories via physics-informed neural networks},
-  note    = {In preparation}
+  author  = {Nickolay Korabel, Tom H. Millard, and Thomas Andrew Waigh},
+  title   = {From dispersal to patrol: the extracellular matrix shapes an annealing-like search by Drosophila embryonic macrophages},
+  note    = {Under review}
 }
 ```
 
