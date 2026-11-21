@@ -123,16 +123,10 @@ where R(H) is the N × N fGn correlation matrix of the increments. D_eff has ord
 ```
 .
 ├── PINN_FBM_3D.py                    # network definition, simulator, training
-├── INFER_PINN_FBM_3D.py              # fixed-window inference
 ├── INFER_PINN_FBM_3D_SLIDING.py      # sliding-window inference (simulated data)
 ├── INFER_PINN_FBM_3D_EXPERIMENTAL.py # sliding-window inference (real tracks)
-├── GRID_POSTERIOR_FBM_3D.py          # exact grid-posterior reference
-├── checkpoints/                      # trained weights, fbm_pinn_N{n}_R{r}*.pt
-└── examples/
-    └── hemocytes/                    # hemocyte analysis notebooks / scripts
-```
 
-> Adjust the names above to match the files in this release.
+> 2D versions of scripts can be found in PINN_FBM_2D.zip
 
 ---
 
@@ -224,7 +218,7 @@ Hemocytes are the macrophages of *Drosophila melanogaster*. During embryogenesis
 3. Compute D_eff per window.
 4. Bin estimates by developmental time and compare genotypes. Confidence intervals come from a whole-curve **cluster bootstrap** over tracks (or embryos), because overlapping windows from one track are correlated.
 
-### Main observations (manuscript in preparation)
+### Main observations (manuscript under review)
 
 - **Warm, then cool.** In the first hour of dispersal, hemocytes gain speed and persistence. Over the patrol phase, D_eff falls steadily.
 - **Control cells cool but remember.** D_eff falls about threefold while H stays persistent (H ≈ 0.63 late in development). Faster cells are also more persistent throughout.
