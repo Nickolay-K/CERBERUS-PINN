@@ -44,8 +44,6 @@ Cerberus addresses this in three ways:
 2. **Physics-informed loss.** The training loss includes the exact Gaussian likelihood of fractional Gaussian noise (fGn) increments, alongside heteroscedastic supervised terms.
 3. **Calibrated uncertainty.** Each head predicts a mean and a standard deviation. Seed-sweep checkpoints can be ensembled to add epistemic uncertainty.
 
-On simulated fractional Brownian motion (FBM), the best variant closes about 96% of the gap between a maximum-likelihood baseline and the exact Bayesian posterior under the training prior (scored on the joint Gaussian log-score of H and log₁₀ D). The exact posterior is computed by `GRID_POSTERIOR_FBM_3D.py` and serves as the reference the network amortises.
-
 ---
 
 ## Model
